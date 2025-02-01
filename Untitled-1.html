@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f8f9fa;
+        }
+        .navbar {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            color: red;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-btn:hover {
+            background: darkblue;
+        }
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #74180d;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">make<span style="color:black">my</span>trip</div>
+        <div class="nav-links">
+            <a href="#">Flights</a>
+            <a href="#">Hotels</a>
+            <a href="#">Trains</a>
+            <a href="#">Buses</a>
+            <a href="#">Cabs</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Book Your Flight</h2>
+        <form>
+            <div class="form-group">
+                <label>From</label>
+                <select>
+                    <option>Hyderabad (HYD)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-plane-departure"></i> To</label>
+                <select>
+                    <option>Chennai (MAA)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-calendar-alt"></i> Departure Date</label>
+                <input type="date" value="2025-01-31">
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-users"></i> Travellers & Class</label>
+                <select>
+                    <option>1 Traveller - Economy</option>
+                </select>
+            </div>
+            <button class="search-btn"><i class="fas fa-search"></i> SEARCH</button>
+        </form>
+    </div>
+
+</body>
+</html>
+<!-- filepath: /C:/Users/tanvi/Untitled-1.html
+ <div class="">
+<div class="form-group">
+    <label><i class="material-icons">flight_takeoff</i> To</label>
+    <select>
+        <option>Chennai (MAA)</option>
+    </select>
+</div>
+<div class="form-group">
+    <label><i class="material-icons">date_range</i> Departure Date</label>
+    <input type="date" value="2025-01-31">
+</div>
+<div class="form-group">
+    <label><i class="material-icons">people</i> Travellers & Class</label>
+    <select>
+        <option>1 Traveller - Economy</option>
+    </select>
+</div>
+</div>
+<button class="search-btn"><i class="material-icons">search</i> SEARCH</button>
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v143/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+} -->
